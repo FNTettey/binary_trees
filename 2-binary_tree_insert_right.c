@@ -21,6 +21,6 @@ return (NULL);
 right_child->right = parent->right;
 if (right_child->right != NULL)
 right_child->right->parent = right_child;
-parent->left = right_child;
+parent->right = right_child;
 return(right_child);
 }
